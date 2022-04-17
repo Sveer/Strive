@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Strive.Infrastructure.Data
+namespace Strive.Infrastructure.Data.Mongo
 {
     public class MongoDbOptions
     {

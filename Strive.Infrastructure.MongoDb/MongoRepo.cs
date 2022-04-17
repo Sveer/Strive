@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace Strive.Infrastructure.Data
+namespace Strive.Infrastructure.Data.Mongo
 {
     public abstract class MongoRepo<T>
     {

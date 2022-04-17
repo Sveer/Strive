@@ -2,7 +2,7 @@ using Autofac;
 using Strive.Core.Interfaces.Services;
 using Strive.Core.Services.ConferenceManagement.Gateways;
 using Strive.Infrastructure.Auth;
-using Strive.Infrastructure.Data;
+using Strive.Infrastructure.Data.Mongo;
 using Strive.Infrastructure.Data.Repos;
 using Strive.Infrastructure.KeyValue;
 using Strive.Infrastructure.Scheduler;

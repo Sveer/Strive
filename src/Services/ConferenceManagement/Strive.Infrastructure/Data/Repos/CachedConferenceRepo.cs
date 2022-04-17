@@ -4,6 +4,7 @@ using Microsoft.Extensions.Caching.Memory;
 using Strive.Core.Domain.Entities;
 using Strive.Core.Interfaces.Gateways;
 using Strive.Core.Services.ConferenceManagement.Gateways;
+using Strive.Infrastructure.Data.Mongo.Repos;
 using Strive.Infrastructure.Utilities;
 
 namespace Strive.Infrastructure.Data.Repos

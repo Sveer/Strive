@@ -27,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Strive.Infrastructure.MongoDb\Strive.Infrastructure.MongoDb.csproj" />
     <ProjectReference Include="..\Strive.Core\Strive.Core.csproj" />
   </ItemGroup>
 	

@@ -7,11 +7,12 @@ using Strive.Core.Domain.Entities;
 using Strive.Core.Interfaces.Gateways;
 using Strive.Core.Services.Chat;
 using Strive.Core.Services.ConferenceManagement.Gateways;
+using Strive.Infrastructure.Data.Mongo;
 using Strive.Infrastructure.Utilities;
 
 #pragma warning disable 8619
 
-namespace Strive.Infrastructure.Data.Repos
+namespace Strive.Infrastructure.Data.Mongo.Repos
 {
     public class ConferenceRepo : MongoRepo<Conference>, IConferenceRepo
     {

@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30804.86
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32408.312
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSPA", "Web\WebSPA\WebSPA.csproj", "{72887F42-3A9A-4D03-828A-E7D673F16EBC}"
 EndProject
@@ -46,6 +46,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strive.Core.IntegrationTests", "Services\ConferenceManagement\Strive.Core.IntegrationTests\Strive.Core.IntegrationTests.csproj", "{7312667B-171C-44BB-82D9-DBCFD089B81F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strive.Tests.Utils", "Services\ConferenceManagement\Strive.Tests.Utils\Strive.Tests.Utils.csproj", "{A8B829F0-C68C-4587-B0B2-B0535AB1AAD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strive.Infrastructure.MongoDb", "..\Strive.Infrastructure.MongoDb\Strive.Infrastructure.MongoDb.csproj", "{204337C8-015E-46BB-A85F-CB9173E1065D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strive.Infrastructure.Npgsql", "..\Strive.Infrastructure.Npgsql\Strive.Infrastructure.Npgsql.csproj", "{6DDAD6BD-1D9F-4A7D-B370-5794B40D7178}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -109,6 +113,14 @@ Global
 		{A8B829F0-C68C-4587-B0B2-B0535AB1AAD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8B829F0-C68C-4587-B0B2-B0535AB1AAD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8B829F0-C68C-4587-B0B2-B0535AB1AAD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{204337C8-015E-46BB-A85F-CB9173E1065D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{204337C8-015E-46BB-A85F-CB9173E1065D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{204337C8-015E-46BB-A85F-CB9173E1065D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{204337C8-015E-46BB-A85F-CB9173E1065D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DDAD6BD-1D9F-4A7D-B370-5794B40D7178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DDAD6BD-1D9F-4A7D-B370-5794B40D7178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DDAD6BD-1D9F-4A7D-B370-5794B40D7178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DDAD6BD-1D9F-4A7D-B370-5794B40D7178}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -131,6 +143,8 @@ Global
 		{BD9A0067-58EE-43C5-A171-4660EF33B40F} = {1E91B583-050D-4034-A376-C14503186A40}
 		{7312667B-171C-44BB-82D9-DBCFD089B81F} = {BD9A0067-58EE-43C5-A171-4660EF33B40F}
 		{A8B829F0-C68C-4587-B0B2-B0535AB1AAD3} = {BD9A0067-58EE-43C5-A171-4660EF33B40F}
+		{204337C8-015E-46BB-A85F-CB9173E1065D} = {1E91B583-050D-4034-A376-C14503186A40}
+		{6DDAD6BD-1D9F-4A7D-B370-5794B40D7178} = {F61D6DF4-B31E-46D1-9F7A-B22204ED9FE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6C6656CC-2AAB-43CD-9AD4-2233F632192A}

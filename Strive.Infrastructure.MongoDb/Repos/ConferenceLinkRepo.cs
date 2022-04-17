@@ -9,8 +9,9 @@ using Strive.Core.Interfaces.Gateways;
 using Strive.Core.Interfaces.Gateways.Repositories;
 using Strive.Infrastructure.Utilities;
 using SpeciVacation;
+using Strive.Infrastructure.Data.Mongo;
 
-namespace Strive.Infrastructure.Data.Repos
+namespace Strive.Infrastructure.Data.Mongo.Repos
 {
     public class ConferenceLinkRepo : MongoRepo<ConferenceLink>, IMongoIndexBuilder, IConferenceLinkRepo
     {
@@ -33,7 +34,7 @@ namespace Strive.Infrastructure.Data.Repos
                 Builders<ConferenceLink>.IndexKeys.Combine(
                     Builders<ConferenceLink>.IndexKeys.Ascending(x => x.ParticipantId),
                     Builders<ConferenceLink>.IndexKeys.Ascending(x => x.ConferenceId)),
-                new CreateIndexOptions {Unique = true}));
+                new CreateIndexOptions { Unique = true }));
         }
 
         public async Task<IReadOnlyList<ConferenceLink>> FindAsync(ISpecification<ConferenceLink> specification)
@@ -45,7 +46,7 @@ namespace Strive.Infrastructure.Data.Repos
         public Task<OptimisticUpdateResult> CreateOrReplaceAsync(ConferenceLink conferenceLink)
         {
             return Collection.Optimistic(x => x.Version)
-                .UpdateAsync(conferenceLink, new ReplaceOptions {IsUpsert = true}).Wrap();
+                .UpdateAsync(conferenceLink, new ReplaceOptions { IsUpsert = true }).Wrap();
         }
 
         public Task DeleteAsync(ConferenceLink conferenceLink)

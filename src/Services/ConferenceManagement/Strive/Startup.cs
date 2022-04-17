@@ -36,7 +36,7 @@ using Strive.Extensions;
 using Strive.Hubs.Core;
 using Strive.Hubs.Equipment;
 using Strive.Infrastructure;
-using Strive.Infrastructure.Data;
+using Strive.Infrastructure.Data.Mongo;
 using Strive.Infrastructure.KeyValue;
 using Strive.Infrastructure.KeyValue.Abstractions;
 using Strive.Infrastructure.KeyValue.InMemory;

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
-using Strive.Infrastructure.Data;
+using Strive.Infrastructure.Data.Mongo;
 
 namespace Strive.Services
 {
