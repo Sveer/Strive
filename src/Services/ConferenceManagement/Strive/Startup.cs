@@ -138,7 +138,7 @@ namespace Strive
                 services.AddSingleton(s => s.GetRequiredService<IRedisDatabase>().Database);
                 services.AddSingleton<IKeyValueDatabase, RedisKeyValueDatabase>();
 
-                healthChecks.AddRedis(config.ConnectionString);
+                healthChecks.AddRedis(config.ConnectionString??"");
             }
 
             // MongoDb
